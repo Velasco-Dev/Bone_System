@@ -1,0 +1,14 @@
+{
+    "builds" : [
+        {
+            "src": "BoneSystem/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "BoneSystem/wsgi.py"
+        }
+    ]
+}
