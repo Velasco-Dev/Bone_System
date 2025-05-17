@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     {% include 'header.html' %}
 
@@ -19,7 +19,11 @@
 
     {% include 'footer.html' %}
 
+    <!-- Popper.js -->
+    <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script> -->
+    <script src="{% static 'js/acordeon-collapse.js' %}"></script>
     <script src="https://kit.fontawesome.com/41670bed7e.js" crossorigin="anonymous"></script>
 </body>
 

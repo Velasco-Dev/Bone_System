@@ -1,4 +1,55 @@
-.texto-blanco{
+.texto-blanco {
     color: white !important;
 }
 
+/* Altura máxima y scroll vertical */
+.accordion-body.scrollable-content {
+    max-height: 300px;
+    /* Ajusta este valor según necesites */
+    overflow-y: auto;
+    /* Habilita el scroll vertical */
+    padding-right: 10px;
+    /* Evita que el contenido toque la barra de scroll */
+}
+
+/* Estilo opcional para la barra de scroll (solo navegadores WebKit) */
+.accordion-body.scrollable-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.accordion-body.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #6c757d;
+    /* Color del scroll */
+    border-radius: 4px;
+}
+
+.margen-superior-navbar {
+    margin-top: 5.5% !important;
+}
+
+@media (max-width: 1600px) {
+    .margen-superior-navbar {
+        margin-top: 8% !important;
+    }
+}
+
+body{
+    background-color: #ccd2d5 !important;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.carousel-image {
+  width: 100% !important;
+  /* height: 100% !important; */
+  object-fit: cover !important; /* ¡Mágico! */
+  object-position: center !important;
+}
