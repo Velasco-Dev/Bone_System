@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Óseo</title>
+    <title>TouchBone</title>
     <link rel="shortcut icon" href="{% static 'images/x-ray.png' %}" type="image/png">
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
@@ -13,11 +13,11 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    {% include 'header.html' %}
+    {% include 'common/header.html' %}
 
     {% include 'screens/landing.html' %}
 
-    {% include 'footer.html' %}
+    {% include 'common/footer.html' %}
 
     <!-- Popper.js -->
     <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>

@@ -1,9 +1,11 @@
-<footer class="bg-success bg-gradient text-white py-4 mt-5 rounded">
+{% load static %}
+
+<footer class="bg-success bg-gradient text-white py-4 rounded">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h5>Sistema Óseo <i class="fa-solid fa-bone"></i></h5>
-                <p>© 2025 Todos los derechos reservados</p>
+            <div class="col-md-6 text-start">
+                <img src="{% static 'images/rayos-x.png' %}" alt="" srcset="" class="icon-footer">
+                <h5>TouchBone</h5>
             </div>
             <div class="col-md-6 text-end">
                 <ul class="list-inline">
@@ -11,6 +13,11 @@
                     <li class="list-inline-item"><a href="#" class="text-white">Privacidad</a></li>
                     <li class="list-inline-item"><a href="#" class="text-white">Contacto</a></li>
                 </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p>© 2025 Todos los derechos reservados</p>
             </div>
         </div>
     </div>

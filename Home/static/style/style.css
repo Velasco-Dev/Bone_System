@@ -33,23 +33,60 @@
     }
 }
 
-body{
+/* Bloquea la selección de texto en toda la página */
+body {
     background-color: #ccd2d5 !important;
+
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Estándar */
+    
+    /* Opcional: cursor por defecto en lugar de texto */
+    cursor: default;
+}
+
+/* Permite selección en campos de texto y textareas */
+input, textarea {
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
 }
 
 .carousel-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.3);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-image {
-  width: 100% !important;
-  /* height: 100% !important; */
-  object-fit: cover !important; /* ¡Mágico! */
-  object-position: center !important;
+    width: 100% !important;
+    /* height: 100% !important; */
+    object-fit: cover !important;
+    /* ¡Mágico! */
+    object-position: center !important;
+}
+
+.icon-footer {
+    margin-inline-start: 10px;
+    width: 90px;
+}
+
+.card {
+    transition: transform 0.3s !important;
+}
+
+.card:hover {
+    transform: translateY(-5px) !important;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word; /* Mejor ajuste para palabras */
+    hyphens: auto;
 }
