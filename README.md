@@ -24,7 +24,7 @@ Un sistema web educativo desarrollado con Django para aprender sobre la anatomí
 
 1. Clona el repositorio:
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/Velasco-Dev/Bone_System.git
 ```
 
 2. Crea y activa un entorno virtual:
